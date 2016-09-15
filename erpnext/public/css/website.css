@@ -1,3 +1,4 @@
+
 .web-long-description {
   font-size: 18px;
   line-height: 200%;
@@ -43,7 +44,7 @@
   color: #d1d8dd;
 }
 .product-text {
-  padding: 15px 0px;
+  padding: 150px 0px;
 }
 .product-label {
   padding-bottom: 4px;
@@ -242,7 +243,7 @@
   margin-top: 30px;
 }
 .product-image-img {
-  border: 1px solid #EBEFF2;
+  border: 3px solid #ddd;
   border-radius: 3px;
 }
 .product-text {
@@ -250,6 +251,7 @@
   padding: 15px;
   word-wrap: break-word;
   height: 75px;
+ fonts-size: 10px;
 }
 .product-image-wrapper {
   padding-bottom: 40px;
