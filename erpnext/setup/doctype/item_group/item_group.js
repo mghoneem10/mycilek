@@ -26,8 +26,12 @@ frappe.ui.form.on("Item Group", {
 			frm.add_custom_button(__("Items"), function() {
 				frappe.set_route("List", "Item", {"item_group": frm.doc.name});
 			});
+<<<<<<< HEAD
 		}  
 
+=======
+		}
+>>>>>>> 4a121d60db136daa86f1bf72f34e694fc803c13b
 	},
 
 	set_root_readonly: function(frm) {

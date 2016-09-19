@@ -460,14 +460,23 @@ class Item(WebsiteGenerator):
 
 			vals = frappe.db.get_value("Item", self.name, to_check, as_dict=True)
 
+<<<<<<< HEAD
 		if vals:
 			for key in to_check:
+=======
+			if vals:
+				for key in to_check:
+>>>>>>> 4a121d60db136daa86f1bf72f34e694fc803c13b
 					if self.get(key) != vals.get(key):
 						if not self.check_if_linked_document_exists():
 							break # no linked document, allowed
 						else:
 							frappe.throw(_("As there are existing transactions for this item, you can not change the value of {0}").format(frappe.bold(self.meta.get_label(key))))
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 4a121d60db136daa86f1bf72f34e694fc803c13b
 			if vals and not self.is_fixed_asset and self.is_fixed_asset != vals.is_fixed_asset:
 				asset = frappe.db.get_all("Asset", filters={"item_code": self.name, "docstatus": 1}, limit=1)
 				if asset:
